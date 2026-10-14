@@ -21,7 +21,7 @@ import java.util.List;
 public class FASTAReader {
 
 	protected byte[] content;
-	protected int validBytes;
+	protected int validBytes; // indica cuántos de los bytes de content son válidos. Es decir, que solo serán válidos los elementos desde content[0] hasta content[validBytes- 1].
 
 	/**
 	 * Creates a new FASTAReader from a FASTA file.
